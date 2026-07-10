@@ -7,6 +7,10 @@
 	margin: 100px;
 }
 
+.p1 {
+	font-family: 'Lobster Two', cursive;
+}
+
 body {
 	background-color: #37555B;
 }
@@ -33,10 +37,13 @@ body {
 
 ul {
 	list-style-type: none;
-	/*display: inline-block;*/
 	 margin: 0;
 	 padding: 0;
 	 overflow: hidden;
+}
+
+a {
+	font-family: 'Courier Prime', monospace;
 }
 
 ul li{
