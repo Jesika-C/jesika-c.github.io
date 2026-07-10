@@ -4,7 +4,7 @@
 	padding: 119px 68px 119px 68px;
 	width: 1600px;
 	height: 936px;
-	margin: 100px;
+	margin: 5px;
 }
 
 body {
@@ -22,11 +22,11 @@ body {
 	display: flex; 
 	justify-content: center;
 	align-items: center;
-	box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+	box-shadow: 5px;
 	position: fixed; /* Set the navbar to fixed position */
 	top: 0; /* Position the navbar at the top of the page */
 	width: 100%; /* Full width */
-	margin-bottom:100px;
+	margin-bottom:5px;
 }
 
 ul {
