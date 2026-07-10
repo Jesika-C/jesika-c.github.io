@@ -1,4 +1,6 @@
-.box {
+.box { 
+	justify-content: center;
+	align-items: center;
 	background-color: #578088;
 	padding: 119px 68px 119px 68px;
 	width: 1600px;
@@ -7,4 +9,17 @@
 
 body {
 	background-color: #37555B;
+}
+
+.bar{
+	text-align: center;
+	display: flex; 
+	justify-content: center;
+	align-items: center;
+}
+
+ul {
+	list-style-type: none;
+	display: inline-block;
+	text-align: left;
 }
