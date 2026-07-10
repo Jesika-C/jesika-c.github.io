@@ -1,0 +1,15 @@
+{
+  "uniforms": {
+    "u_color": [
+      0.5019607843137255,
+      0.5019607843137255,
+      0.5019607843137255
+    ],
+    "u_scale": 1,
+    "u_horizontal": 0.23,
+    "u_vertical": 0.32,
+    "u_intensity": 1
+  },
+  "fragmentShader": "\n\n        // Credits: [jarble](https://www.shadertoy.com/view/NsfSRB)\n\n        uniform vec3 u_color;\n        uniform float u_scale;//units:%\n        uniform float u_horizontal;//units:%\n        uniform float u_vertical;//units:%\n        uniform int u_intensity;//min:1,max:4\n\n\n        void main(){\n\n            float scale = 100.;\n            int intensity = (2 + u_intensity);\n            intensity *= intensity;\n            vec2 coord = ((1.001-u_scale)*100.)*scale*(gl_FragCoord.xy + vec2(1.0,0.0));\n            \n            coord.x *= (1.001 - u_horizontal);\n            coord.y *= (1.001 - u_vertical);\n            \n            // Heart of color selection.\n            int val = ((int(coord.x) & int(coord.y)) % 3);\n            float result = 0.0;\n            vec3 col = vec3(0.0);\n            vec3 col_prev;\n            for(int i = 0; i < intensity; i++){\n                col_prev = col;\n                coord.y += (4.0+result);\n                coord = coord.yx/(3.0);\n                result = ((result + float(val = ((int(coord.x) | int(coord.y)) % (3+val))))/(2.0));\n                col.x = (result+col.z)/2.0;\n                col = (fract((col.yzx))+col_prev)/2.0;\n            }\n            // Output.\n            gl_FragColor = vec4(u_color,col);\n        }",
+  "vertexShader": "#version 300 es\nprecision highp float;\nin vec4 a_position;\nin vec2 a_tex_coord;\nout vec2 v_tex_coord;\n\nvoid main() {\n  gl_Position = a_position;\n  v_tex_coord = a_tex_coord;\n}"
+}
