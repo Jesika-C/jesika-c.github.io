@@ -1,43 +1,31 @@
-.box {  
-	text-align: left;
-	background-color: #578088;
-	padding: 119px 68px 119px 68px;
-	width: 1600px;
-	height: 936px;
-	margin: 100px;
-}
-
-h1 {
-	font-family: 'Lobster Two';
-}
-
-p{
-	font-family: 'Courier Prime', monospace;
+main {
+	display: grid;
+	place-items: center;
 }
 
 body {
 	background-color: #37555B;
 }
 
-.center{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 0;
+h1 {
+	font-family: 'Lobster Two', cursive;
+	font-size: 64px;
+	color: #DDD6B6;
 }
 
-.navbar{
+h3 {
 	text-align: center;
-	display: flex; 
-	justify-content: center;
-	align-items: center;
-	box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-	position: fixed; /* Set the navbar to fixed position */
-	top: 0; /* Position the navbar at the top of the page */
-	width: 100%; /* Full width */
-	margin-bottom:100px;
-	background-color: #37555B;
+	font-family: 'Courier Prime', monospace;
+	font-size: 48px;
+	color: #ABC99E;
 }
+
+p{
+	
+	font-family: 'Courier Prime', monospace;
+	font-size: 24px;
+}
+
 
 ul {
 	list-style-type: none;
@@ -46,18 +34,75 @@ ul {
 	 overflow: hidden;
 }
 
-a {
-	font-family: 'Courier Prime', monospace;
-}
-
 ul li{
 	float: left;
 }
 
-ul li a{
+ul li a {
 	display: block;
 	color: #ABC99E;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
+}
+
+/* class */
+
+/*.center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+}
+*/
+
+
+
+/* id */
+
+#about {  
+
+	background-color: #74948C;
+	padding: 119px 68px 119px 68px;
+	width: 1600px;
+	height: 936px;
+	margin: 100px;
+	outline-style: solid;
+	outline-width: 1px; 
+}
+
+
+
+#project {
+	background-color: #CA7C4C;
+	padding: 119px 68px 119px 68px;
+	width: 660px;
+	height: 750px;
+	margin: 100px;
+	outline-style: solid;
+	outline-width: 1px;
+}
+
+#navbar{
+	text-align: center;
+	display: flex; 
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 5px 4px 0 rgba(0,0,0,.2);
+	position: fixed; /* Set the navbar to fixed position */
+	top: 0; /* Position the navbar at the top of the page */
+	width: 100%; /* Full width */
+	margin-bottom:100px;
+	background-color: #578088;
+}
+
+#navbar a {
+	font-family: 'Courier Prime', monospace;
+	text-shadow: 2px 2px #37555B;
+	font-size: 24px;
+}
+
+#profile{
+	display: block;
+	margin-left: auto;
 }
