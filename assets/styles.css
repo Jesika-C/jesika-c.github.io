@@ -26,14 +26,14 @@ body {
 	box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 	position: fixed; /* Set the navbar to fixed position */
 	top: 0; /* Position the navbar at the top of the page */
-	/*width: 100%; /* Full width */
+	width: 100%; /* Full width */
 	margin-bottom:100px;
 	background-color: #37555B;
 }
 
 ul {
 	list-style-type: none;
-	display: inline-block;
+	/*display: inline-block;*/
 	 margin: 0;
 	 padding: 0;
 	 overflow: hidden;
