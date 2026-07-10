@@ -1,4 +1,5 @@
 .box { 
+	display: flex;
 	justify-content: center;
 	align-items: center;
 	background-color: #578088;
@@ -17,6 +18,9 @@ body {
 	justify-content: center;
 	align-items: center;
 	box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+	position: fixed; /* Set the navbar to fixed position */
+	top: 0; /* Position the navbar at the top of the page */
+	width: 100%; /* Full width */
 }
 
 ul {
