@@ -6,6 +6,7 @@ main {
 body {
 	background-color: #37555B;
 	margin: 0px;
+	padding: 50px;
 }
 
 h1 {
@@ -49,20 +50,6 @@ ul li a {
 
 /* class */
 
-
-
-/*.center{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 0;
-}
-*/
-
-
-
-/* id */
-
 .about { 
 	display: flex;
 	background-color: #74948C;
@@ -76,10 +63,9 @@ ul li a {
 	
 }
 
+/* id */
+
 #about-text {
-	/*
-	flex: 1 1 10;
-	*/
 	display: inline-block;
     width: 46%;
     @media (max-width: 620px) {
@@ -89,20 +75,12 @@ ul li a {
 }
 
 #about-image {
-	/*
-	margin: 52px 30px 0 50px;
-	width: 566px;
-    object-fit: contain;
-    align-self: flex-start;
-	*/
 	display: inline-block;
-	margin: 52px 30px 0 70px;
+	margin: 52px 30px 0 0;
     vertical-align: top;
-    width: 46%;
+    width: 100%;
 	
 }
-
-
 
 #project {
 	background-color: #CA7C4C;
@@ -130,9 +108,4 @@ ul li a {
 	font-family: 'Courier Prime', monospace;
 	text-shadow: 2px 2px #37555B;
 	font-size: 24px;
-}
-
-#profile-img {
-	
-    
 }
