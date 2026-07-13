@@ -5,6 +5,7 @@ main {
 
 body {
 	background-color: #37555B;
+	margin: 0px;
 }
 
 h1 {
@@ -48,6 +49,8 @@ ul li a {
 
 /* class */
 
+
+
 /*.center{
 	display: flex;
 	justify-content: center;
@@ -60,15 +63,43 @@ ul li a {
 
 /* id */
 
-#about {  
-
+.about { 
+	display: flex;
 	background-color: #74948C;
-	padding: 119px 68px 119px 68px;
+	padding: 90px 68px 119px 68px;
 	width: 1600px;
 	height: 936px;
 	margin: 100px;
 	outline-style: solid;
 	outline-width: 1px; 
+	border-radius: 4px;
+	
+}
+
+#about-text {
+	/*
+	flex: 1 1 10;
+	*/
+	display: inline-block;
+    width: 46%;
+    @media (max-width: 620px) {
+      width: 100%;
+    }
+	
+}
+
+#about-image {
+	/*
+	margin: 52px 30px 0 50px;
+	width: 566px;
+    object-fit: contain;
+    align-self: flex-start;
+	*/
+	display: inline-block;
+	margin: 52px 30px 0 70px;
+    vertical-align: top;
+    width: 46%;
+	
 }
 
 
@@ -92,7 +123,6 @@ ul li a {
 	position: fixed; /* Set the navbar to fixed position */
 	top: 0; /* Position the navbar at the top of the page */
 	width: 100%; /* Full width */
-	margin-bottom:100px;
 	background-color: #578088;
 }
 
@@ -102,7 +132,7 @@ ul li a {
 	font-size: 24px;
 }
 
-#profile{
-	display: block;
-	margin-left: auto;
+#profile-img {
+	
+    
 }
